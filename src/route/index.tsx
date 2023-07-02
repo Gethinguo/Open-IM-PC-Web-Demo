@@ -432,7 +432,7 @@ const Auth = () => {
 };
 
 const RouterWrapper = ({ children }: { children: ReactNode }) => {
-  return window.electron ? <HashRouter>{children}</HashRouter> : <BrowserRouter>{children}</BrowserRouter>;
+  return window.electron ? <HashRouter>{children}</HashRouter> : <HashRouter>{children}</HashRouter>;
 };
 
 const MyRoute = () => {
